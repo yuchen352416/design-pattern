@@ -5,9 +5,9 @@ package pro.yuchen.singleton;
  */
 public enum SingletonDemo_05 {
 
-	INSTANCE;
+	INSTANCE; // 返回本身
 
-	private void operation() {
+	public void operation() {
 		System.out.println("......");
 	}
 
