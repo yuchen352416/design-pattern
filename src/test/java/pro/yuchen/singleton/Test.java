@@ -74,11 +74,11 @@ public class Test {
 			new Thread(new Runnable() {
 				public void run() {
 					for (int i = 0; i < 10000; i++) {
-//						Object o = SingletonDemo_01.getInstance(); // 287
+//						Object o = SingletonDemo_01.getInstance(); // 104
 //						Object o = SingletonDemo_02.getInstance(); // 199
 //						Object o = SingletonDemo_03.getInstance(); // 254
-//						Object o = SingletonDemo_04.getInstance(); // 519
-						Object o = SingletonDemo_05.INSTANCE; // 274
+//						Object o = SingletonDemo_04.getInstance(); // 121
+//						Object o = SingletonDemo_05.INSTANCE; // 274
 					}
 					count.countDown();
 				}
