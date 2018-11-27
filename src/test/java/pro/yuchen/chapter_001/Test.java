@@ -6,7 +6,7 @@ public class Test {
 
     @org.junit.Test
     public void test_001() {
-        MallardDuck duck = new MallardDuck();
+        Duck duck = new MallardDuck();
         duck.performFly();
         duck.performQuack();
         duck.display();
@@ -15,7 +15,7 @@ public class Test {
 
     @org.junit.Test
     public void test_002() {
-        MallardDuck duck = new MallardDuck();
+        Duck duck = new MallardDuck();
         duck.performFly();
         duck.setFlyBehavior(new FlyRocketPowered());
         duck.performFly();
