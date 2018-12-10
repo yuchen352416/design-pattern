@@ -52,4 +52,48 @@ public class Test {
         }
     }
 
+    @org.junit.Test
+    public void test_005() { // 牛客网--面试题
+        Test test = new Test();
+
+        int i = test.test_inner_005();
+        System.out.println(i);
+    }
+
+    public int test_inner_005() {
+        try {
+            int i = 0 / 10;
+            return i;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return 1;
+        } finally {
+            System.out.println("finally...");
+        }
+    }
+
+    @org.junit.Test
+    public void test_006() {
+        short a = 128;
+        byte b = (byte) a;
+        System.out.println(a);
+        System.out.println(b);
+    }
+
+    @org.junit.Test
+    public void test_007() {
+        int t = test_inner_007();
+        System.out.println(t);
+    }
+
+    public int test_inner_007() {
+        try {
+            return 1;
+        } catch (Exception e) {
+            return 2;
+        } finally {
+            return 3;
+        }
+    }
+
 }
