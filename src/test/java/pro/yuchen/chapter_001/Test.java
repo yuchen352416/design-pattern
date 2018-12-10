@@ -24,21 +24,17 @@ public class Test {
     @org.junit.Test
     public void test_003() { // 甜甜购--面试题
         String str = " asdfjkltatyuiuytdfghj";
-        String[] arr = str.split("");
+        char[] arr = str.toCharArray();
         for (int i = 0; i < arr.length; i++) {
             for (int j = i; j < arr.length - 1; j++) {
-                if (arr[j].toCharArray()[0] > arr[j+1].toCharArray()[0]) {
-                    String t = arr[j];
+                if (arr[j] > arr[j+1]) {
+                    char t = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = t;
                 }
             }
         }
-
-
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]);
-        }
+        System.out.println(arr);
     }
 
     @org.junit.Test
