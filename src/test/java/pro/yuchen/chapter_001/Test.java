@@ -96,4 +96,28 @@ public class Test {
         }
     }
 
+    @org.junit.Test
+    public void test_008() {
+        class Demo {
+            Demo() {
+                test();
+            }
+            public void test() {
+                System.out.println("Super.test()");
+            }
+        }
+
+        class TestDemo extends Demo {
+            TestDemo() {
+                super.test();
+            }
+            @Override
+            public void test() {
+                System.out.println("Sub.test()");
+            }
+        }
+
+        TestDemo demo = new TestDemo();
+        demo.test();
+    }
 }
